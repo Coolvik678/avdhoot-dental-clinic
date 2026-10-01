@@ -1,0 +1,12 @@
+{
+  "name": "avdhoot-dental-clinic",
+  "version": "1.0.0",
+  "description": "Avdhoot Dental Clinic & Implant Centre - Gum & Implant Specialist in Ravet, PCMC",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["dentist", "ravet", "dental-implants", "periodontist", "avdhoot-dental-clinic"],
+  "author": "Dr. Nikita Palkar - Sankpal",
+  "license": "MIT"
+}

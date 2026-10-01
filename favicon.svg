@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" fill="#0F4C5C"/>
+  <circle cx="32" cy="32" r="28" stroke="#4E9F9F" stroke-width="2"/>
+  <!-- Dental Implant & Tooth Icon -->
+  <path d="M22 18C22 15 25 14 32 14C39 14 42 15 42 18C42 22 40 26 38 29L38 31C38 32 37 33 36 33L28 33C27 33 26 32 26 31L26 29C24 26 22 22 22 18Z" fill="#FFFFFF"/>
+  <!-- Implant thread grooves -->
+  <rect x="27" y="35" width="10" height="2.5" rx="1" fill="#C5A880"/>
+  <rect x="28" y="39" width="8" height="2.5" rx="1" fill="#C5A880"/>
+  <rect x="29" y="43" width="6" height="2.5" rx="1" fill="#C5A880"/>
+  <polygon points="32,49 29.5,47 34.5,47" fill="#C5A880"/>
+  <!-- Gentle sparkle -->
+  <path d="M44 14L45 18L49 19L45 20L44 24L43 20L39 19L43 18Z" fill="#F8F32B"/>
+</svg>

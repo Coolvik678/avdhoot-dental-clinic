@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-teal: #0F4C5C;
+  --color-teal-dark: #0A323D;
+  --color-navy: #0A2540;
+  --color-aqua: #4E9F9F;
+  --color-aqua-light: #E8F5F5;
+  --color-gold: #C5A880;
+  --color-gold-light: #F7F1E5;
+  --color-bg-light: #F8FAFC;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  color: #1E293B;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-marathi {
+  font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0F4C5C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0A2540;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-dark {
+  background: rgba(15, 76, 92, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Glow effects */
+.hover-glow-teal:hover {
+  box-shadow: 0 12px 30px -8px rgba(15, 76, 92, 0.35);
+}
+
+.hover-glow-gold:hover {
+  box-shadow: 0 12px 30px -8px rgba(197, 168, 128, 0.4);
+}
+
+/* Floating animation */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentle 5s ease-in-out infinite 2s;
+}
+
+/* Subtle pulse for live badges */
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
+
+/* Modal styling */
+.modal-overlay {
+  transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+}
+.modal-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-overlay:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Custom Selection */
+::selection {
+  background: #E8F5F5;
+  color: #0F4C5C;
+}
